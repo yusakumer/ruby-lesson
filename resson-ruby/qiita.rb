@@ -5,8 +5,10 @@ require 'json'
 class Qiita
 
   attr_reader :url
+  attr_accessor :query
 
   def initialize(query)
+    @query = query
     @url = "https://qiita.com/api/v2/items?query=#{query}"
   end
 

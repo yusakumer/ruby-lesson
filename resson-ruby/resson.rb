@@ -9,3 +9,4 @@ format_names = names.map do |name|
 end
 
 p format_names
+
