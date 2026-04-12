@@ -1,11 +1,5 @@
-require 'uri'
-require 'net/http'
-require 'json'
+require_relative './qiita'
 
-url = "https://qiita.com/api/v2/items"
-
-uri = URI.parse(url)
-
-res = Net::HTTP.get(uri)
-res = JSON.parse(res)
-puts res.class
+qiita = Qiita.new("Ruby")
+q  = qiita.search
+p q
