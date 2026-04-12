@@ -1,5 +1,5 @@
 require_relative './qiita'
 
-qiita = Qiita.new("Ruby")
+qiita = Qiita.new("Python")
 q  = qiita.search
 p q
