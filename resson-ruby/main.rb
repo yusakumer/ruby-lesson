@@ -5,4 +5,5 @@ q  = qiita.search
 p q
 
 qiita.query = "Ruby"
+p qiita.query
 p qiita.search
