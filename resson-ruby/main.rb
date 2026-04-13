@@ -4,6 +4,6 @@ qiita = Qiita.new("Python")
 q  = qiita.search
 p q
 
-qiita.query = "Ruby"
+qiita.query = "java"
 p qiita.query
 p qiita.search
