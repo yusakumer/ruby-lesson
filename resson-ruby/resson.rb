@@ -8,5 +8,4 @@ format_names = names.map do |name|
   "#{name[:family_name]} #{name[:first_name]}"
 end
 
-p format_names
-
+puts names.any?{|e| e[:first_name] == "taro"}
