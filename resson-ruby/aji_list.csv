@@ -1,1 +1,1 @@
-user_name,fish_species,size
+id,user_name,fish_name,size_cm,weight_g,location,fished_at,weather,tide_type

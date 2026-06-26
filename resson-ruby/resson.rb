@@ -42,3 +42,16 @@ CSV.open("max_fish_size.csv", "wb") do |csv_r|
   end
 
 end
+
+CSV.open("oshio_average_size.csv", "wb") do |r|
+  r << ["fish_name", "average_size_cm"]
+  sizes_hash = Hash.new { |hash, key| hash[key] = [] }
+
+  csv.each do |row|
+    if row["tide_type"] == "大潮"
+      sizes_hash[row["fish_name"]] << row["size_cm"]
+    end
+  end
+
+  puts sizes_hash
+end
