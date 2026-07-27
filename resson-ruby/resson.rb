@@ -52,6 +52,4 @@ CSV.open("oshio_average_size.csv", "wb") do |r|
       sizes_hash[row["fish_name"]] << row["size_cm"]
     end
   end
-
-  puts sizes_hash
 end
